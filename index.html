@@ -2,180 +2,240 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="assets/style/reset.css">
-  <link rel="stylesheet" href="assets/style/fonts.css">
-  <link rel="stylesheet" href="assets/style/main.css" />
-  <title>Nike</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/main.css">
+    <link rel="stylesheet" href="./assets/style/media.css">
+    <title>Nike</title>
 </head>
 
 <body>
 
-  <header class="header">
-    <nav class="nav container">
-      <a href="#" class="nav__logo">
-        <img src="assets/icons/logo.svg" alt="LOGO" />
-      </a>
-      <ul class="nav__list">
-        <li class="nav__list-item">
-          <a href="#" class="nav__link">Sneakers</a>
-        </li>
-        <li class="nav__list-item">
-          <a href="#" class="nav__link">Gumshoes</a>
-        </li>
-        <li class="nav__list-item">
-          <a href="#" class="nav__link">T-shirts</a>
-        </li>
-        <li class="nav__list-item">
-          <a href="#" class="nav__link">Shorts</a>
-        </li>
-        <li class="nav__list-item">
-          <a href="#" class="nav__link">Jeans</a>
-        </li>
-        <li class="nav__list-item">
-          <a href="#" class="nav__link">Sweaters</a>
-        </li>
-        <li class="nav__list-item">
-          <a href="#" class="nav__link">Sweatshirts</a>
-        </li>
-      </ul>
-    </nav>
-
-    <div class="nav__content">
-      <div class="container">
-        <h1 class="nav__content-title">NIKE</h1>
-        <h3 class="nav__content-subtitle">
-          Cool sneakers from <span>NIKE</span> for you
-        </h3>
-      </div>
-    </div>
-  </header>
-
-  <main class="main">
-    <div class="container">
-      <div class="main__content">
+    <div class="wrapper">
         
-        <div class="bigger">
-          <img src="assets/images/card-img.png" alt="" />
-          <h3 class="main__list-title">
-            Shoe Review: Nike React Infinity Run
-          </h3>
-          <p class="main__item-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-            aliquam, purus sit amet luctus venenatis, lectus magna fringilla
-            urna, porttitor rhoncus dolor purus non enim praesent elementum
-            facilisis leo, vel fringilla est ullamcorper eget nulla facilisi
-            etiam dignissim diam quis enim lobortis scelerisque fermentum dui
-            faucibus in ornare quam viverra orci sagittis eu volutpat odio
-            facilisis mauris sit amet massa
-          </p>
-        </div>
-        
-        <ul class="main__list">
-          <li class="main__list-item">
-            <img src="assets/images/4.png" alt="" />
-            <div class="main__list-title">Nike Air Max 270</div>
-            <div class="main__item-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-              aliquam, purus sit amet luctus venenatis
+        <header class="header">
+            <nav class="nav">
+                <div class="nav__content container">
+                    <a href="" class="nav__logo">
+                        <img src="./assets/images/logo.png" alt="LOGO">
+                    </a>
+
+                    <input type="checkbox" id="toggle-menu">
+
+                    <ul class="nav__list">
+                        <li>
+                            <a href="" class="nav__list-link">
+                                Sneakers
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="nav__list-link">
+                                Gumshoes
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="nav__list-link">
+                                T-shirts
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="nav__list-link">
+                                Shorts
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="nav__list-link">
+                                Jeans
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="nav__list-link">
+                                Sweaters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="nav__list-link">
+                                Sweatshirts
+                            </a>
+                        </li>
+                    </ul>
+
+                    <label class="toggle__menu-btn" for="toggle-menu">
+                        <span></span>
+                    </label>
+                    <div class="overlay"></div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <section class="preview">
+                <h1 class="preview__title">
+                    NIKE
+                </h1>
+    
+                <p class="preview__descr">
+                    Cool sneakers from <strong>NIKE</strong> for you
+                </p>
+            </section>
+    
+            <section class="presentation">
+                <div class="presentation__content container">
+                    <div class="presentation__view">
+                        <img src="./assets/images/main.png" alt="">
+                        <h3 class="presentation__view-title">
+                            Shoe Review: Nike React Infinity Run
+                        </h3>
+                        <p class="presentation__view-descr">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus
+                            venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent
+                            elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam
+                            quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu
+                            volutpat odio facilisis mauris sit amet massa
+                        </p>
+                    </div>
+                    <div class="presentation__collection">
+                        <div class="presentation__collection-item">
+    
+                            <div class="presentation__collection-card">
+                                <div class="collection-card-img">
+                                    <img src="./assets/images/product1.png" alt="">
+                                </div>
+    
+                                <h4>
+                                    Nike Air Max 270
+                                </h4>
+    
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                    luctus venenatis
+                                </p>
+                            </div>
+    
+                            <div class="presentation__collection-card">
+                                <div class="collection-card-img">
+                                    <img src="./assets/images/product1.png" alt="">
+                                </div>
+    
+                                <h4>
+                                    Nike Air Max 270
+                                </h4>
+    
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                    luctus venenatis
+                                </p>
+                            </div>
+    
+                        </div>
+                        <div class="presentation__collection-item">
+    
+                            <div class="presentation__collection-card">
+                                <div class="collection-card-img">
+                                    <img src="./assets/images/product1.png" alt="">
+                                </div>
+    
+                                <h4>
+                                    Nike Air Max 270
+                                </h4>
+    
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                    luctus venenatis
+                                </p>
+                            </div>
+    
+                            <div class="presentation__collection-card">
+                                <div class="collection-card-img">
+                                    <img src="./assets/images/product1.png" alt="">
+                                </div>
+    
+                                <h4>
+                                    Nike Air Max 270
+                                </h4>
+    
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                    luctus venenatis
+                                </p>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+        </main>
+
+        <footer class="footer">
+            <div class="footer__content container">
+    
+                <form action="" class="footer__form">
+                    <input type="text" placeholder="Your name" required>
+    
+                    <textarea placeholder="Message"></textarea>
+    
+                    <button>
+                        Submit
+                    </button>
+    
+                </form>
+    
+                <div class="footer__item">
+                    <ul class="footer__list">
+                        <li>
+                            <a href="" class="footer__list-link">
+                                Sneakers
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer__list-link">
+                                Gumshoes
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer__list-link">
+                                T-shirts
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer__list-link">
+                                Shorts
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul class="footer__list">
+                        <li>
+                            <a href="" class="footer__list-link">
+                                Jeans
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer__list-link">
+                                Sweaters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer__list-link">
+                                Sweatshirts
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <ul class="footer__socials">
+                    <li>
+                        <a href="">
+                            
+                        </a>
+                    </li>
+                </ul>
+    
             </div>
-          </li>
-          <li class="main__list-item">
-            <img src="assets/images/3.png" alt="" />
-            <div class="main__list-title">Nike Tanjun</div>
-            <div class="main__item-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-              aliquam, purus sit amet luctus venenatis
-            </div>
-          </li>
-          <li class="main__list-item">
-            <img src="assets/images/2.png" alt="" />
-            <div class="main__list-title">Green Air Force</div>
-            <div class="main__item-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-              aliquam, purus sit amet luctus venenatis
-            </div>
-          </li>
-          <li class="main__list-item">
-            <img src="assets/images/1.png" alt="" />
-            <div class="main__list-title">Nike moon shoes</div>
-            <div class="main__item-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-              aliquam, purus sit amet luctus venenatis
-            </div>
-          </li>
-        </ul>
-        
-      </div>
+        </footer>
+
     </div>
-  </main>
-
-  <footer class="footer">
-    <div class="footer__content container">
-
-      <form class="footer__form" action="" method="get">
-        <input class="footer__form name" type="text" placeholder="Your Name">
-        <input class="footer__form message" type="text" placeholder="Message">
-        <button class="footer__button">Submit</button>
-      </form>
-
-      <ul class="footer__list-products">
-        <li class="footer__list-item">
-          <a href="#">Sneakers</a>
-        </li>
-        <li class="footer__list-item">
-          <a href="#">Gumshoes</a>
-        </li>
-        <li class="footer__list-item">
-          <a href="#">T-shirts</a>
-        </li>
-        <li class="footer__list-item">
-          <a href="#">Shorts</a>
-        </li>
-        <li class="footer__list-item">
-          <a href="#">Jeans</a>
-        </li>
-        <li class="footer__list-item">
-          <a href="#">Sweaters</a>
-        </li>
-        <li class="footer__list-item">
-          <a href="#">Sweatshirts</a>
-        </li>
-      </ul>
-
-      <ul class="footer__socials">
-        <li class="footer__socials-item">
-          <a href="#">
-            <img src="assets/icons/fb.svg" alt="">
-          </a>
-        </li>
-        <li class="footer__socials-item">
-          <a href="#">
-            <img src="assets/icons/tw.svg" alt="">
-          </a>
-        </li>
-        <li class="footer__socials-item">
-          <a href="#">
-            <img src="assets/icons/google.svg" alt="">
-          </a>
-        </li>
-        <li class="footer__socials-item">
-          <a href="#">
-            <img src="assets/icons/pt.svg" alt="">
-          </a>
-        </li>
-      </ul>
-
-    </div>
-
-  </footer>
 </body>
 
 </html>
